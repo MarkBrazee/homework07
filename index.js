@@ -1,5 +1,11 @@
 // --------Psuedo Code------------
 
+// Ask all of the questions
+// Start generating the ReadMe file
+    // What item of the readme am I writing
+    // Call the function and pass in the data it needs to get back the markdown code
+    //add markdown code to ReadMe File
+
 // ```md
 // GIVEN a command-line application that accepts user input
 
@@ -38,13 +44,51 @@ const fs = require("fs")
 
 
 // array of questions for user
+    // GitHub username
+    // email address
+    // Project name
+    // Description of the project
+    // Installation instructions
+    // Usage instructions
+    // Contribution guidelines
+    // Test instructions
+
 const questions = [ {
+    
+    type: "input",
+    message: "What is your GitHub username",
+    ident: "ident",
+    
     type: "input",
     message: "What is your name?",
     name: "name",
-}
+
     type: "input",
-    message: "What is your GitHub "
+    message: "What is your email address",
+    email: "email",
+
+    type: "input",
+    message: "Enter Project Name",
+    projName: "projName",
+
+    type: "input",
+    message: "Description of the project",
+    descript: "descript",
+
+    type: "input",
+    message: "Installation instructions",
+    install: "install",
+
+    type: "input",
+    message: "Contribution instructions",
+    cont: "cont",
+
+    type: "input",
+    message: "Test instructions",
+    test: "test",
+
+}
+    
 ];
 
 // function to write README file
@@ -56,12 +100,27 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then(({
-        name
+        ident, name, email, projName, descript, install, cont, test
     }) => {
         const markdown = `
-## My name is ${name}
+## GitHub username: ${ident}
+
+## Name: ${name}
+
+## Email: ${email}
+
+## Project Name: ${projName}
+
+## Description of the Project: ${descript}
+
+## Installation instructions: ${install}
+
+## Contribution instructions: ${cont}
+
+## Test instructions: ${test}
+
 `
-        writeToFile("tempReadMe.md", markdown)
+        writeToFile("ReadMe.md", markdown)
     })
 }
 
