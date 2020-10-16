@@ -92,38 +92,37 @@ const questions = [ {
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFileSync(fileName, data)
-}   
+// function writeToFile(fileName, data) {
+//     fs.writeFileSync(fileName, data)
+// }   
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions)
     .then(({
-        ident, name, email, projName, descript, install, cont, test
+        ident, name, email, projName, descript, install, cont, test,
     }) => {
         const markdown = `
-## GitHub username: ${ident}
+## GitHub username: ${ident},
 
-## Name: ${name}
+## Name: ${name},
 
-## Email: ${email}
+## Email: ${email},
 
-## Project Name: ${projName}
+# Project Name: ${projName},
 
-## Description of the Project: ${descript}
+### Description of the Project: ${descript},
 
-## Installation instructions: ${install}
+### Installation instructions: ${install},
 
-## Contribution instructions: ${cont}
+### Contribution instructions: ${cont},
 
-## Test instructions: ${test}
+### Test instructions: ${test}
 
 `
         writeToFile("ReadMe.md", markdown)
     })
 }
-
 
 
 // function call to initialize program
