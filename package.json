@@ -11,5 +11,14 @@
     "inquirer": "^6.5.2"
   },
   "keywords": [],
-  "description": ""
+  "description": "This is a test to use the **Markdown** syntax in a *ReadMe* file.",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkBrazee/homework07.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarkBrazee/homework07/issues"
+  },
+  "homepage": "https://github.com/MarkBrazee/homework07#readme"
 }

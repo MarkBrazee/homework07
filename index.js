@@ -2,8 +2,11 @@
 
 // ```md
 // GIVEN a command-line application that accepts user input
+
 // WHEN I am prompted for information about my application repository
+
 // THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
 // WHEN I enter my project title
 // THEN this is displayed as the title of the README
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
@@ -30,22 +33,39 @@
 
 // -------------------------------
 
-
+const inquirer = require("inquirer")
+const fs = require("fs")
 
 
 // array of questions for user
-const questions = [
-
+const questions = [ {
+    type: "input",
+    message: "What is your name?",
+    name: "name",
+}
+    type: "input",
+    message: "What is your GitHub "
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    fs.writeFileSync(fileName, data)
+}   
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions)
+    .then(({
+        name
+    }) => {
+        const markdown = `
+## My name is ${name}
+`
+        writeToFile("tempReadMe.md", markdown)
+    })
 }
+
+
 
 // function call to initialize program
 init();
