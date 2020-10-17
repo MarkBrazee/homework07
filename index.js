@@ -155,7 +155,7 @@ ${test}
 
 ### Link to Usage Video:
 
-http://www.github.com/MarkBrazee/homework07/video.gif
+http://www.github.com/MarkBrazee/homework07/blob/main/video.gif
 
 ### Questions? 
 
