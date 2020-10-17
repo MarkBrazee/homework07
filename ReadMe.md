@@ -27,5 +27,5 @@ http://www.github.com/MarkBrazee/homework07/video.gif
 
 ### Questions? 
 
-Contact Markk Brazee at: m.brazee@comcast.net or at github.com/MarkBrazee
+Contact Mark Brazee at: m.brazee@comcast.net or at github.com/MarkBrazee
 
