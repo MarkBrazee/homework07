@@ -135,31 +135,31 @@ function init() {
 
 ### Description of the Project: 
 
-####${descript}
+${descript}
 
 ### Installation instructions: 
 
-####${install}
+${install}
 
 ### Usage instructions: 
 
-####${usage}
+${usage}
 
 ### Contribution instructions: 
 
-####${cont}
+${cont}
 
 ### Test instructions: 
 
-####${test}
+${test}
 
 ### Link to Usage Video:
 
-####
+http://www.github.com/MarkBrazee/homework07/video.gif
 
 ### Questions? 
 
-####Contact ${name} at: ${email} or at github.com/${ident}
+Contact ${name} at: ${email} or at github.com/${ident}
 
 `
         writeToFile("ReadMe.md", markdown)
