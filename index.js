@@ -21,8 +21,8 @@
     // WHEN I choose a license for my application from a list of options
     // THEN a badge for that license is added hear the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
 
-    // WHEN I enter my GitHub username
-    // THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+// WHEN I enter my GitHub username
+// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
 
 // WHEN I enter my email address
 // THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
@@ -106,7 +106,17 @@ const questions = [ {
     type: "input",
     message: "Test instructions",
     name: "test",
-
+    
+// {
+//     type: "checkbox",
+//     message: "Select a license",
+//     name: "license",
+//     choices: [
+//       "MIT", 
+//       "FreeBSD", 
+//       "Beerware", 
+//       "BSD License",
+//     ]
 }];
 
 // function to write README file
@@ -123,17 +133,33 @@ function init() {
         const markdown = `
 # Project Name: ${projName}
 
-### Description of the Project: ${descript},
+### Description of the Project: 
 
-### Installation instructions: ${install},
+####${descript}
 
-### Usage instructions: ${usage},
+### Installation instructions: 
 
-### Contribution instructions: ${cont},
+####${install}
 
-### Test instructions: ${test},
+### Usage instructions: 
 
-### Questions? Contact ${name} at: ${email}, or at github.com/${ident}
+####${usage}
+
+### Contribution instructions: 
+
+####${cont}
+
+### Test instructions: 
+
+####${test}
+
+### Link to Usage Video:
+
+####
+
+### Questions? 
+
+####Contact ${name} at: ${email} or at github.com/${ident}
 
 `
         writeToFile("ReadMe.md", markdown)
