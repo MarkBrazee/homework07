@@ -1,5 +1,5 @@
 
-# Project Name: Good ReadMe File
+# Project Name: Good ReadMe Generator
 
 ### Description of the Project: 
 
@@ -15,11 +15,11 @@ To use the Good ReadMe Generator, open the index.js file within a program for wr
 
 ### Contribution instructions: 
 
-Please contribute to enhance the functionality of this code. Please adhere to the Code of Conduct from the Contributer Covenant, version 2.0, at https://www.contributor-convenant/version/2/0/code_of_conduct.html.
+Please contribute to enhance the functionality of this code. Please adhere to the Code of Conduct from the Contributor Covenant, version 2.0, at https://www.contributor-convenant/version/2/0/code_of_conduct.html.
 
 ### Test instructions: 
 
-Testing pending.
+Testing is pending.
 
 ### Link to Usage Video:
 
@@ -27,5 +27,5 @@ http://www.github.com/MarkBrazee/homework07/video.gif
 
 ### Questions? 
 
-Contact Mark Brazee at: m.brazee@comcast.net or at github.com/MarkBrazee
+Contact Markk Brazee at: m.brazee@comcast.net or at github.com/MarkBrazee
 
