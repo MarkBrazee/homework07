@@ -1,5 +1,5 @@
 
-# Project Name: Good ReadMe Generator
+# Project Name: Good ReadMe File
 
 ### Description of the Project: 
 
@@ -23,7 +23,7 @@ Testing pending.
 
 ### Link to Usage Video:
 
-
+http://www.github.com/MarkBrazee/homework07/video.gif
 
 ### Questions? 
 
